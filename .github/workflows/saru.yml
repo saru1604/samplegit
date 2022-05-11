@@ -2,17 +2,17 @@ name: java CI with maven
 
 on:
   push:
-    branches: [ main ]
+    branches: [ saru ]
     pull_request:
-      branches: [ main ]     
+      branches: [ saru ]     
 jobs:
  
   build:
   
     runs-on:ubuntu-latest
     
-    steps:
-    - uses: actions/checkout@v3
+     steps:
+       - uses: actions/checkout@v3
     
     - run:
         echo "file is successful run"
